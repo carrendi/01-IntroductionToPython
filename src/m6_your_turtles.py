@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Danna Carreno.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -27,4 +27,51 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
-########################################################################
+import rosegraphics as rg
+
+window= rg.TurtleWindow()
+window.delay(10)
+
+simba = rg.SimpleTurtle('turtle')
+simba.speed = 2
+
+size=120
+
+
+simba.pen.pen_up
+simba.draw_circle(size)
+simba.forward(2)
+
+simba.pen_down()
+size=size-5
+
+sunflower=rg.SimpleTurtle()
+sunflower.pen =rg.Pen('yellow', 30)
+
+sunflower.forward(100)
+sunflower.right(90)
+sunflower.forward(100)
+sunflower.right(90)
+sunflower.forward(100)
+sunflower.right(90)
+sunflower.forward(100)
+
+sunflower.draw_circle(36)
+sunflower.right(10)
+sunflower.left(36)
+sunflower.left(45)
+sunflower.forward(20)
+
+sunflower.right(90)
+sunflower.forward(100)
+sunflower.left(90)
+sunflower.forward(100)
+sunflower.right(90)
+sunflower.forward(50)
+sunflower.left(90)
+sunflower.forward(150)
+sunflower.right(90)
+sunflower.forward(50)
+sunflower.right(90)
+sunflower.left(100)
+##################################################
