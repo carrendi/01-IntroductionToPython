@@ -34,44 +34,45 @@ window.delay(10)
 
 simba = rg.SimpleTurtle('turtle')
 simba.speed = 2
+simba.pen=rg.Pen('pink', 15)
 
 size=120
 
+for k in range(7):
+    simba.draw_circle(size)
 
-simba.pen.pen_up
-simba.draw_circle(size)
-simba.forward(2)
+    simba.pen_up()
+    simba.right(90)
+    simba.forward(50)
+    simba.right(90)
+    simba.forward(100)
 
-simba.pen_down()
-size=size-5
+    simba.pen_down()
+    size = size - 15
 
-sunflower=rg.SimpleTurtle()
-sunflower.pen =rg.Pen('yellow', 30)
+window.tracer(100)
 
-sunflower.forward(100)
-sunflower.right(90)
-sunflower.forward(100)
-sunflower.right(90)
-sunflower.forward(100)
-sunflower.right(90)
-sunflower.forward(100)
+nala = rg.SimpleTurtle('square')
+nala.pen = rg.Pen('violet', 15)
 
-sunflower.draw_circle(36)
-sunflower.right(10)
-sunflower.left(36)
-sunflower.left(45)
-sunflower.forward(20)
+for k in range(50):
+    nala.draw_regular_polygon(8,k)
 
-sunflower.right(90)
-sunflower.forward(100)
-sunflower.left(90)
-sunflower.forward(100)
-sunflower.right(90)
-sunflower.forward(50)
-sunflower.left(90)
-sunflower.forward(150)
-sunflower.right(90)
-sunflower.forward(50)
-sunflower.right(90)
-sunflower.left(100)
+    nala.pen_up()
+    nala.forward(k)
+    nala.left(90)
+    nala.forward(k)
+    nala.right(50)
+    nala.forward(k)
+    nala.left(90)
+    nala.forward(50)
+    nala.pen_down()
+
+window.close_on_mouse_click()
+
+
+
+
+
+
 ##################################################
