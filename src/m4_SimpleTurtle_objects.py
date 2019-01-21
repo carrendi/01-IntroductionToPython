@@ -100,6 +100,7 @@ boris.forward(200)
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
+
 #   - Construct a second SimpleTurtle,
 #     set its  pen  and  speed  INSTANCE VARIABLES, and ask it to do things.
 # -----------------------------------------------------------------------------
